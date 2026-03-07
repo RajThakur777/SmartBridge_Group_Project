@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero-section{
+  position:relative;
+  height:80vh;
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+
+.hero-section::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.45);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+}
+
+/* ================= EXPLORE BUTTON ================= */
+
+.explore-btn{
+  background:#f4b400;
+  border:none;
+  padding:14px 28px;
+  font-size:18px;
+  border-radius:8px;
+  transition:all 0.3s ease;
+}
+
+.explore-btn:hover{
+  transform:scale(1.05);
+  background:#e0a800;
+}
+
+/* ================= TEMPLE SECTION ================= */
+
+.bg-light {
+  background: linear-gradient(to right, #f8f9fa, #ffffff);
+}
+
+/* ================= TEMPLE CARD ================= */
+
+.temple-card {
+  border-radius:14px;
+  overflow:hidden;
+  background:white;
+  transition:transform 0.35s ease, box-shadow 0.35s ease;
+  cursor:pointer;
+  height:100%;
+}
+
+/* CARD HOVER EFFECT */
+
+.temple-card:hover{
+  transform:translateY(-12px) scale(1.03);
+  box-shadow:0 25px 45px rgba(0,0,0,0.25);
+}
+
+/* REMOVE DEFAULT BOOTSTRAP BORDER */
+
+.card{
+  border:none;
+}
+
+/* ================= IMAGE CONTAINER ================= */
+
+.image-container{
+  width:100%;
+  height:240px;
+  overflow:hidden;
+}
+
+/* TEMPLE IMAGE */
+
+.temple-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* ================= CARD BODY ================= */
+
+.card-body{
+  padding:20px;
+}
+
+.card-body h5{
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.card-body p{
+  font-size:14px;
+  color:#6c757d;
+}
+
+/* ================= BUTTON ================= */
+
+.book-btn{
+  background:#f4b400;
+  border:none;
+  padding:10px 20px;
+  border-radius:8px;
+  font-weight:500;
+  transition:all 0.3s ease;
+}
+
+.book-btn:hover{
+  background:#e0a800;
+  transform:scale(1.05);
+}
+
+/* ================= FEATURES ================= */
+
+.features{
+  padding:60px 0;
+}
+
+.features h4{
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:992px){
+  .image-container{
+    height:220px;
+  }
+}
+
+@media (max-width:768px){
+  .image-container{
+    height:200px;
+  }
+}
